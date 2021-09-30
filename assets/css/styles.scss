@@ -4,15 +4,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
-$primary-dark: #020112;
+$primary-black: #020112;
+$primary-dark-blue: #021729;
 
 * {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  color: $primary-dark;
+  color: $primary-black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2 {
+  color: $primary-dark-blue;
+}
+
+h1 {
+  font-size: 30px;
 }
 
 #navbar {
@@ -30,20 +43,20 @@ $primary-dark: #020112;
 
     .nav-item * {
       color: rgba(0, 0, 0, 0.25);
-      margin: 0 0.5rem;
     }
 
     .nav-item.active * {
-      margin: 0 0.5rem;
-      color: $primary-dark;
+      color: $primary-black;
     }
 
     .nav-item {
+      margin: 0 0.5rem;
+
       .btn {
+        padding: 0.5rem 1rem;
         border: 1px solid #021729;
-        padding: 0.5rem 1.5rem;
         border-radius: 25px;
-        color: $primary-dark;
+        color: $primary-black;
       }
     }
   }
@@ -53,12 +66,14 @@ $primary-dark: #020112;
   position: relative;
 
   .dark-card {
+    padding: 1rem;
+    position: relative;
     border-radius: 10px;
     background-color: #000;
     max-width: 812px;
     text-align: center;
-    padding: 1.5rem;
     padding-bottom: 0;
+    z-index: 1;
 
     * {
       color: #fff;
@@ -122,6 +137,7 @@ $primary-dark: #020112;
 }
 
 #testimonials {
+  margin-top: 10rem;
   position: relative;
 
   .smilie {
@@ -129,4 +145,435 @@ $primary-dark: #020112;
   }
 }
 
+#how-to {
+  margin: 8rem 0;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .left {
+    position: relative;
+
+    h1 {
+      padding-bottom: 3rem;
+    }
+
+    ol {
+      margin: 0 3rem;
+      padding: 1rem 0 4rem;
+      list-style-type: decimal;
+      border-left: 2px solid #000;
+
+      li {
+        position: relative;
+        margin: 4rem;
+        font-weight: 700;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: -70px;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: #000;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .yellow-circle {
+      position: absolute;
+      left: -90px;
+      top: 50%;
+    }
+  }
+
+  .right {
+    position: relative;
+
+    .yellow-circle,
+    .multiple-circles,
+    .girls {
+      position: absolute;
+    }
+
+    .multiple-circles {
+      left: -60px;
+      top: -50px;
+    }
+
+    .girls {
+      left: -230px;
+    }
+  }
+}
+
+#features {
+  position: relative;
+  margin: 8rem 0;
+
+  .cards-container {
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .gradient-circle,
+  .yellow-circle {
+    position: absolute;
+  }
+
+  .yellow-circle {
+    left: 760px;
+  }
+
+  .gradient-circle {
+    bottom: -50px;
+    left: 370px;
+  }
+}
+
+#subjects {
+  margin: 2rem 0 8rem;
+  position: relative;
+
+  .circles {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+
+  .lists-container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .list {
+      position: relative;
+      padding: 3rem 4rem;
+      border-radius: 5px;
+      box-shadow: 0 1px 4px #00000050;
+      z-index: 1;
+      background-color: #fff;
+
+      li {
+        margin: 1rem 0;
+        text-align: center;
+        color: #020112;
+        opacity: 0.7;
+        font-weight: 600;
+      }
+
+      .btn {
+        font-size: 14px;
+        border-radius: 10px;
+        margin-top: 2rem;
+        background-color: #ffd43a;
+        padding: 0.5rem 2rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+#results {
+  h1 {
+    text-align: center;
+    color: $primary-dark-blue;
+  }
+
+  p {
+    max-width: 880px;
+    color: #021729;
+    font-weight: 500;
+    font-size: 23px;
+  }
+
+  .cards-container {
+    margin-top: 3rem;
+    color: #fff;
+
+    .card {
+      margin: 1rem 2rem;
+      padding: 1rem 3rem;
+      background-color: #000;
+      border-radius: 10px;
+      text-align: center;
+      width: 180px;
+
+      &.blue {
+        background-color: #2959d1;
+      }
+
+      &.dark-blue {
+        background-color: $primary-dark-blue;
+      }
+
+      * {
+        color: #fff;
+      }
+
+      h2 {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
+
+#why-us {
+  margin-top: 8rem;
+
+  .blue-frame {
+    margin-top: 4rem;
+    background-color: #090c22;
+    max-width: 750px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+
+    .group {
+      max-width: 180px;
+
+      h3 {
+        margin-bottom: 1rem;
+      }
+    }
+
+    * {
+      color: #fff;
+    }
+  }
+}
+
+#who-we-are {
+  margin-top: 5rem;
+
+  p {
+    color: rgba(2, 23, 41, 0.5);
+  }
+}
+
+#our-values {
+  margin-top: 6rem;
+
+  .cards-container {
+    .card {
+      h3 {
+        max-width: 300px;
+      }
+
+      p {
+        max-width: 250px;
+      }
+    }
+  }
+
+  .get-tutor {
+    position: relative;
+    box-shadow: 2px 2px 18px #00000025;
+    padding: 4rem;
+    max-width: 680px;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    .btn {
+      background-color: #ffd43a;
+      display: block;
+      width: 140px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: "Quicksand", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: 0px 4px 4px #00000025;
+    }
+
+    h1 {
+      max-width: 520px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1rem;
+    }
+
+    .graduated {
+      position: absolute;
+      right: 30px;
+      bottom: -40px;
+    }
+
+    .whatsapp {
+      position: absolute;
+      right: 265px;
+      bottom: 70px;
+    }
+
+    .right-arrow {
+      position: absolute;
+    }
+  }
+}
+
+#contact {
+  margin-top: 8rem;
+  max-width: 1000px;
+  margin: 8rem auto 2rem;
+
+  .row {
+    & > * {
+      padding: 3rem;
+    }
+  }
+
+  .talk-to-us {
+    position: relative;
+
+    h1 {
+      color: #000;
+    }
+
+    .text-us {
+      position: absolute;
+      right: 0;
+      right: 30px;
+      top: -5px;
+    }
+
+    .form-control {
+      margin: 1rem 0;
+
+      input,
+      textarea {
+        padding: 0.5rem;
+        display: block;
+        width: 325px;
+        border: 1px solid #000;
+        border-radius: 2px;
+      }
+    }
+
+    .btn {
+      position: relative;
+      background-color: #64b161;
+      color: #fff;
+      padding: 1rem;
+      border: 0;
+      font-size: 20px;
+      text-align: center;
+      width: 345px;
+
+      img {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .join-community {
+    padding: 2rem;
+    background-image: linear-gradient(
+      to bottom right,
+      #183651 50%,
+      #7a899d 100%
+    );
+    border-radius: 5px;
+
+    * {
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 2;
+    }
+
+    .cite {
+      color: #cacaca;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+#footer {
+  background-color: rgba(2, 23, 41, 0.8);
+  padding: 3rem 5rem 1rem;
+
+  * {
+    color: #fff;
+  }
+
+  h2,
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  li {
+    margin: 1rem 0;
+    font-weight: 300;
+  }
+
+  .social {
+    max-width: 150px;
+  }
+
+  .legal {
+    margin-top: 5rem;
+
+    & > * {
+      margin: 0 1rem;
+    }
+  }
+}
+
 // ********************************************************* Utils ****************************************************
+
+.underline {
+  text-align: center;
+  border-bottom: 1px solid #18365110;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.cards-container {
+  .card {
+    margin: 1rem 4rem;
+
+    img {
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      max-width: 150px;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      max-width: 170px;
+    }
+  }
+}
+
+.blue {
+  color: #1459b8;
+}
+
+.pink {
+  color: #da4a54;
+}
