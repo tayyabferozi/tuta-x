@@ -7,16 +7,19 @@
     <title>Tuta X</title>
 
     <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./assets/css/slick.css" />
+    <link rel="stylesheet" href="./assets/css/slider.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <div class="container">
+    <div id="dark-overlay"></div>
+    <div class="container-fluid main">
       <nav
         id="navbar"
         class="d-flex justify-content-between align-items-center"
       >
         <div class="nav-logo-wrapper">
-          <img src="./assets/vectors/logo.svg" alt="" />
+          <img src="./assets/vectors/logo.svg" alt="logo" />
         </div>
         <ul class="nav d-flex justify-content-center align-items-center">
           <li class="nav-item active"><a href="#">Home</a></li>
@@ -26,26 +29,48 @@
         </ul>
       </nav>
 
+      <nav
+        id="navbar-sm"
+        class="d-flex justify-content-between align-items-center"
+      >
+        <div class="menu" id="nav-toggler">
+          <img src="./assets/vectors/hamburger.svg" alt="menu" />
+        </div>
+        <div class="nav-logo-wrapper">
+          <img src="./assets/vectors/logo.svg" alt="logo" />
+        </div>
+
+        <a href="#">Login</a>
+      </nav>
+
+      <div class="nav-sm">
+        <ul class="nav">
+          <li class="nav-item active"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#">About Us</a></li>
+          <li class="nav-item"><a href="#">Contact Us</a></li>
+          <li class="nav-item"><a class="btn" href="#">Get a tutor</a></li>
+        </ul>
+      </div>
+
       <section id="landing">
         <img src="./assets/vectors/teacher.svg" alt="teacher" class="teacher" />
-        <img
-          src="./assets/vectors/grey-circles.svg"
-          alt="circles"
-          class="circles"
-        />
         <img src="./assets/vectors/grade.svg" alt="grade" class="grade" />
         <img
           src="./assets/vectors/chemistry.svg"
           alt="chemistry"
           class="chemistry"
         />
+        <div class="mt-5 mt-md-0">&nbsp;</div>
         <img
           src="./assets/vectors/think.svg"
-          class="d-block mx-auto mb-2"
+          class="d-block mx-auto mb-2 mt-5 mt-md-0"
           alt="think"
         />
         <div class="dark-card mx-auto">
-          <div class="main">WE help learners archive academic excellence.</div>
+          <div class="main">
+            WE <span class="green">help</span> learners archive academic
+            excellence.
+          </div>
           <div class="sub">
             Don't let your child struggle, We are here. <br />24/7 support |
             Success
@@ -61,13 +86,130 @@
       </section>
 
       <section id="testimonials">
-        <!-- <img src="./assets/vectors/smilie.svg" alt="smilie" class="smilie" /> -->
+        <h2 class="title">
+          Our <span class="d-md-none d-inline-block">Happy</span> students
+        </h2>
+        <img
+          src="./assets/vectors/gradient-circle-testimonials.svg"
+          class="big-circle"
+          alt="circle"
+        />
+        <img
+          src="./assets/vectors/yellow-circle-testimonials.svg"
+          alt="circle"
+          class="yellow-circle"
+        />
+        <img
+          src="./assets/vectors/pink-gradient-circle-testimonials.svg"
+          alt="gradient-circle"
+          class="gradient-circle"
+        />
+        <img src="./assets/vectors/smilie.svg" alt="smilie" class="smilie" />
+        <div class="container">
+          <section id="testim" class="testim">
+            <div class="testim-cover">
+              <div class="wrap">
+                <span id="right-arrow" class="arrow right"
+                  ><img
+                    src="./assets/vectors/right-arrow-slider.svg"
+                    alt="right-arrow"
+                /></span>
+                <span id="left-arrow" class="arrow left"
+                  ><img
+                    src="./assets/vectors/left-arrow-slider.svg"
+                    alt="left-arrow"
+                /></span>
+                <ul id="testim-dots" class="dots">
+                  <li class="dot active"></li>
+                  <!--
+                    -->
+                  <li class="dot"></li>
+                  <!--
+                    -->
+                  <li class="dot"></li>
+                  <!--
+                    -->
+                  <li class="dot"></li>
+                  <!--
+                    -->
+                  <li class="dot"></li>
+                </ul>
+                <div id="testim-content" class="cont">
+                  <div class="active">
+                    <div class="img">
+                      <img src="./assets/images/Rectangle 82.png" alt="" />
+                      <h2>- Jame, Matric student</h2>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco.
+                    </p>
+                  </div>
+
+                  <div>
+                    <div class="img">
+                      <img src="./assets/images/Rectangle 82.png" alt="" />
+                      <h2>Mr. Lorem Ipsum</h2>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco.
+                    </p>
+                  </div>
+
+                  <div>
+                    <div class="img">
+                      <img src="./assets/images/Rectangle 82.png" alt="" />
+                      <h2>Lorem Ipsum</h2>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco.
+                    </p>
+                  </div>
+
+                  <div>
+                    <div class="img">
+                      <img src="./assets/images/Rectangle 82.png" alt="" />
+                      <h2>Lorem De Ipsum</h2>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco.
+                    </p>
+                  </div>
+
+                  <div>
+                    <div class="img">
+                      <img src="./assets/images/Rectangle 82.png" alt="" />
+                      <h2>Ms. Lorem R. Ipsum</h2>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
       </section>
 
       <div id="how-to">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6 left">
+            <div class="col-6 left">
               <img
                 src="./assets/vectors/yellow-circle-how-to.svg"
                 class="yellow-circle"
@@ -81,7 +223,7 @@
                 <li>Start Learning</li>
               </ol>
             </div>
-            <div class="col-md-6 right">
+            <div class="col-6 right">
               <img
                 src="./assets/vectors/light-green-gradient-circle.svg"
                 alt="circle"
@@ -113,9 +255,10 @@
             d-flex
             justify-content-center
             align-items-center
+            flex-column flex-md-row
           "
         >
-          <div class="card">
+          <div class="card home">
             <img src="./assets/vectors/home.svg" alt="home" />
             <h2>Home tutoring</h2>
             <p>
@@ -123,12 +266,12 @@
               pace.
             </p>
           </div>
-          <div class="card">
+          <div class="card online">
             <img src="./assets/vectors/online.svg" alt="online" />
             <h2>Online tutoring</h2>
             <p>Distance is not an issue, we are the best in your area.</p>
           </div>
-          <div class="card">
+          <div class="card group">
             <img src="./assets/vectors/group.svg" alt="group" />
             <h2>Group tutoring</h2>
             <p>Learn with like minded students, and have fun learning.</p>
@@ -160,6 +303,7 @@
             d-flex
             justify-content-between
             align-items-center
+            flex-column flex-md-row
           "
         >
           <div class="list">
@@ -173,7 +317,7 @@
             </ul>
             <div class="btn">GET A TUTOR</div>
           </div>
-          <div class="list">
+          <div class="list mt-3 mt-md-0">
             <h2>University</h2>
             <ul>
               <li>Calculus</li>
@@ -201,6 +345,7 @@
             d-flex
             justify-content-center
             align-items-center
+            flex-column flex-md-row
           "
         >
           <div class="card">
@@ -227,6 +372,7 @@
             d-flex
             justify-content-center
             align-items-center
+            flex-column flex-md-row
           "
         >
           <div class="card">
@@ -254,8 +400,9 @@
             blue-frame
             d-flex
             justify-content-between
-            align-items-center
+            align-items-start
             mx-auto
+            flex-column flex-md-row
           "
         >
           <div class="group">
@@ -281,10 +428,45 @@
 
       <section id="who-we-are">
         <h1 class="underline mb-3">WHO WE ARE.</h1>
-        <p class="text-center">
+        <h3 class="text-center">
           We are group of young passionate about Education. We are pentient,
           driven by the execellent results from our thriving students.
-        </p>
+        </h3>
+
+        <div id="slick">
+          <div class="item">
+            <div class="text">
+              <h2>Thembinkosi Manhique</h2>
+              <h4>Beng Electrical</h4>
+              <h4>Lead Instructor, Founder & CEO</h4>
+            </div>
+            <img src="./assets/images/Rectangle 82 (1).png" alt="" srcset="" />
+          </div>
+          <div class="item">
+            <div class="text">
+              <h2>Thembinkosi Manhique</h2>
+              <h4>Beng Electrical</h4>
+              <h4>Lead Instructor, Founder & CEO</h4>
+            </div>
+            <img src="./assets/images/Rectangle 82 (1).png" alt="" srcset="" />
+          </div>
+          <div class="item">
+            <div class="text">
+              <h2>Thembinkosi Manhique</h2>
+              <h4>Beng Electrical</h4>
+              <h4>Lead Instructor, Founder & CEO</h4>
+            </div>
+            <img src="./assets/images/Rectangle 82 (1).png" alt="" srcset="" />
+          </div>
+          <div class="item">
+            <div class="text">
+              <h2>Thembinkosi Manhique</h2>
+              <h4>Beng Electrical</h4>
+              <h4>Lead Instructor, Founder & CEO</h4>
+            </div>
+            <img src="./assets/images/Rectangle 82 (1).png" alt="" srcset="" />
+          </div>
+        </div>
       </section>
 
       <section id="our-values">
@@ -296,6 +478,7 @@
             d-flex
             justify-content-center
             align-items-center
+            flex-column flex-md-row
           "
         >
           <div class="card">
@@ -361,7 +544,7 @@
       <section id="contact">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6 talk-to-us">
+            <div class="col-lg-6 talk-to-us text-center text-lg-left">
               <h2>Talk to Us</h2>
               <h3>Send Us a Message</h3>
               <img
@@ -396,7 +579,7 @@
               </form>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <div class="join-community">
                 <h1>Join a community of excelling students</h1>
 
@@ -434,7 +617,12 @@
               <li>
                 <img
                   src="./assets/vectors/logo-light.svg"
-                  class="logo"
+                  class="logo light"
+                  alt="logo"
+                />
+                <img
+                  src="./assets/vectors/logo.svg"
+                  class="logo dark"
                   alt="logo"
                 />
               </li>
@@ -443,7 +631,7 @@
                   class="d-flex justify-content-start align-items-center"
                   href="tel:+0672182845"
                   ><img
-                    class="me-3"
+                    class="me-3 whatsapp"
                     src="./assets/vectors/whatsapp.svg"
                     alt="whatsapp"
                   />0672182845</a
@@ -454,7 +642,7 @@
                   class="d-flex justify-content-start align-items-center"
                   href="mailto:thuto.academics@gmail.com"
                   ><img
-                    class="me-3"
+                    class="me-3 mail"
                     src="./assets/vectors/mail.svg"
                     alt="mail"
                   />thuto.academics@gmail.com</a
@@ -500,7 +688,7 @@
               /></a>
             </div>
           </div>
-          <div class="container-fluid legal">
+          <div class="container-fluid legal text-center text-lg-left">
             <div class="row">
               <div class="col-md-3">@QUEDEV, tutaA x &copy; 2021</div>
               <div
@@ -521,6 +709,16 @@
       </div>
     </footer>
 
+    <script src="./assets/js/slider.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="./assets/js/slick.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>
