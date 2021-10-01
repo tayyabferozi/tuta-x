@@ -14,13 +14,30 @@
   </head>
   <body>
     <img
+      src="./assets/vectors/go-to-top.svg"
+      alt="go to top"
+      class="go-to-top bg"
+    />
+    <img
+      src="./assets/vectors/go-to-top-sm.svg"
+      alt="go to top"
+      class="go-to-top sm"
+    />
+
+    <img
       class="top-right-big-circle"
       src="./assets/vectors/top-right-big-circle.svg"
       alt="circle"
     />
 
+    <!-- Dark overlay for active navbar-sm -->
+
     <div id="dark-overlay"></div>
+
+    <!-- Main container START -->
+
     <div class="container-fluid main">
+      <!-- -------------------------------- Navbar for large screens START -------------------------------- -->
       <nav
         id="navbar"
         class="d-flex justify-content-between align-items-center"
@@ -36,6 +53,10 @@
         </ul>
       </nav>
 
+      <!-- -------------------------------- Navbar for small screens END -------------------------------- -->
+
+      <!-- -------------------------------- Navbar for small screens START -------------------------------- -->
+
       <nav
         id="navbar-sm"
         class="d-flex justify-content-between align-items-center"
@@ -50,6 +71,10 @@
         <a class="light" href="#">Login</a>
       </nav>
 
+      <!-- -------------------------------- Navbar for small screens END -------------------------------- -->
+
+      <!-- -------------------------------- Side bar START -------------------------------- -->
+
       <div class="nav-sm">
         <div class="close">&times;</div>
         <ul class="nav">
@@ -59,6 +84,10 @@
           <li class="nav-item"><a class="btn" href="#">login</a></li>
         </ul>
       </div>
+
+      <!-- -------------------------------- Side bar END -------------------------------- -->
+
+      <!-- -------------------------------- Landing section START -------------------------------- -->
 
       <section id="landing">
         <img src="./assets/vectors/teacher.svg" alt="teacher" class="teacher" />
@@ -93,7 +122,7 @@
             Don't let your child struggle, We are here. <br />24/7 support |
             Success
           </div>
-          <div class="cta-btn">Get a tutor</div>
+          <button class="cta-btn">Get a tutor</button>
         </div>
         <div
           class="mt-5 whatsapp d-flex justify-content-center align-items-center"
@@ -102,6 +131,10 @@
           <h2 class="ms-3">0672182845</h2>
         </div>
       </section>
+
+      <!-- -------------------------------- Landing section END -------------------------------- -->
+
+      <!-- -------------------------------- Students / testimonials section START -------------------------------- -->
 
       <section id="testimonials">
         <h2 class="title">
@@ -280,7 +313,11 @@
         </div>
       </section>
 
-      <div id="how-to">
+      <!-- -------------------------------- Students / testimonials section END -------------------------------- -->
+
+      <!-- -------------------------------- How to get a tutor START -------------------------------- -->
+
+      <section id="how-to">
         <div class="list-wrap">
           <img
             src="./assets/vectors/yellow-circle-how-to.svg"
@@ -310,7 +347,11 @@
             alt=""
           />
         </div>
-      </div>
+      </section>
+
+      <!-- -------------------------------- How to get a tutor END -------------------------------- -->
+
+      <!-- -------------------------------- Features START -------------------------------- -->
 
       <section id="features">
         <h1 class="underline">
@@ -358,6 +399,10 @@
         />
       </section>
 
+      <!-- -------------------------------- Features END -------------------------------- -->
+
+      <!-- -------------------------------- Subjects START -------------------------------- -->
+
       <section id="subjects">
         <h1 class="underline mb-4">Subject We Offer.</h1>
         <img
@@ -383,7 +428,7 @@
               <li>Accounting</li>
               <li>CAT</li>
             </ul>
-            <div class="btn">GET A TUTOR</div>
+            <button class="btn">GET A TUTOR</button>
           </div>
           <div class="list mt-3 mt-md-0">
             <h2>University</h2>
@@ -394,10 +439,14 @@
               <li>Chemistry</li>
               <li>Programming</li>
             </ul>
-            <div class="btn">GET A TUTOR</div>
+            <button class="btn">GET A TUTOR</button>
           </div>
         </div>
       </section>
+
+      <!-- -------------------------------- Subjects END -------------------------------- -->
+
+      <!-- -------------------------------- Results START -------------------------------- -->
 
       <section id="results">
         <h1 class="underline">We deliver results.</h1>
@@ -430,6 +479,10 @@
           </div>
         </div>
       </section>
+
+      <!-- -------------------------------- Results END -------------------------------- -->
+
+      <!-- -------------------------------- Why Us START -------------------------------- -->
 
       <section id="why-us">
         <h1 class="text-center mb-4 pb-2 underline">Why Choose US?</h1>
@@ -494,6 +547,10 @@
         </div>
       </section>
 
+      <!-- -------------------------------- Why Us END -------------------------------- -->
+
+      <!-- -------------------------------- Who we are START -------------------------------- -->
+
       <section id="who-we-are">
         <h1 class="underline mb-3">WHO WE ARE.</h1>
         <h3 class="text-left mx-auto">
@@ -538,6 +595,10 @@
 
         <div class="join-btn">Join Our Team</div>
       </section>
+
+      <!-- -------------------------------- Who we are END-------------------------------- -->
+
+      <!-- -------------------------------- Our values START -------------------------------- -->
 
       <section id="our-values">
         <h1 class="underline mb-4 pb-3">OUR VALUES</h1>
@@ -593,11 +654,13 @@
         <div class="get-tutor">
           <h1>Ready to ACE all your classes and exams?</h1>
 
-          <img
-            src="./assets/vectors/right-arrow.svg"
-            class="right-arrow"
-            alt="arrow"
-          />
+          <button>
+            <img
+              src="./assets/vectors/right-arrow.svg"
+              class="right-arrow"
+              alt="arrow"
+            />
+          </button>
           <div class="btn">Get a tutor</div>
           <img
             src="./assets/vectors/whatsapp.svg"
@@ -611,6 +674,9 @@
           />
         </div>
       </section>
+      <!-- -------------------------------- Our values END -------------------------------- -->
+
+      <!-- -------------------------------- Contact us START -------------------------------- -->
 
       <section id="contact">
         <div class="container-fluid">
@@ -679,6 +745,10 @@
         </div>
       </section>
     </div>
+
+    <!-- -------------------------------- Contact us END -------------------------------- -->
+
+    <!-- -------------------------------- Footer START -------------------------------- -->
 
     <footer id="footer">
       <div class="container-fluid">
@@ -787,6 +857,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- -------------------------------- Footer END -------------------------------- -->
 
     <script
       type="text/javascript"
