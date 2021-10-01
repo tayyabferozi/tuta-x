@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tuta X</title>
 
+    <link rel="stylesheet" href="./assets/css/bootstrap-utils.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="./assets/css/slick.css" />
     <link rel="stylesheet" href="./assets/css/slider.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
+    <img
+      class="top-right-big-circle"
+      src="./assets/vectors/top-right-big-circle.svg"
+      alt="circle"
+    />
+
     <div id="dark-overlay"></div>
     <div class="container-fluid main">
       <nav
@@ -25,7 +32,7 @@
           <li class="nav-item active"><a href="#">Home</a></li>
           <li class="nav-item"><a href="#">About Us</a></li>
           <li class="nav-item"><a href="#">Contact Us</a></li>
-          <li class="nav-item"><a class="btn" href="#">Get a tutor</a></li>
+          <li class="nav-item"><a class="btn" href="#">login</a></li>
         </ul>
       </nav>
 
@@ -40,7 +47,7 @@
           <img src="./assets/vectors/logo.svg" alt="logo" />
         </div>
 
-        <a href="#">Login</a>
+        <a class="light" href="#">Login</a>
       </nav>
 
       <div class="nav-sm">
@@ -48,22 +55,32 @@
           <li class="nav-item active"><a href="#">Home</a></li>
           <li class="nav-item"><a href="#">About Us</a></li>
           <li class="nav-item"><a href="#">Contact Us</a></li>
-          <li class="nav-item"><a class="btn" href="#">Get a tutor</a></li>
+          <li class="nav-item"><a class="btn" href="#">login</a></li>
         </ul>
       </div>
 
       <section id="landing">
         <img src="./assets/vectors/teacher.svg" alt="teacher" class="teacher" />
+        <img
+          src="./assets/vectors/teacher-sm.svg"
+          alt="teacher"
+          class="teacher-sm"
+        />
         <img src="./assets/vectors/grade.svg" alt="grade" class="grade" />
         <img
           src="./assets/vectors/chemistry.svg"
           alt="chemistry"
           class="chemistry"
         />
+        <img
+          src="./assets/vectors/chemistry-sm.svg"
+          alt="chemistry-sm"
+          class="chemistry-sm"
+        />
         <div class="mt-5 mt-md-0">&nbsp;</div>
         <img
           src="./assets/vectors/think.svg"
-          class="d-block mx-auto mb-2 mt-5 mt-md-0"
+          class="d-block mx-auto mb-1 mt-5 mt-md-0"
           alt="think"
         />
         <div class="dark-card mx-auto">
@@ -105,142 +122,192 @@
           class="gradient-circle"
         />
         <img src="./assets/vectors/smilie.svg" alt="smilie" class="smilie" />
-        <div class="container">
-          <section id="testim" class="testim">
-            <div class="testim-cover">
-              <div class="wrap">
-                <span id="right-arrow" class="arrow right"
-                  ><img
-                    src="./assets/vectors/right-arrow-slider.svg"
-                    alt="right-arrow"
-                /></span>
-                <span id="left-arrow" class="arrow left"
-                  ><img
-                    src="./assets/vectors/left-arrow-slider.svg"
-                    alt="left-arrow"
-                /></span>
-                <ul id="testim-dots" class="dots">
-                  <li class="dot active"></li>
-                  <!--
-                    -->
-                  <li class="dot"></li>
-                  <!--
-                    -->
-                  <li class="dot"></li>
-                  <!--
-                    -->
-                  <li class="dot"></li>
-                  <!--
-                    -->
-                  <li class="dot"></li>
-                </ul>
-                <div id="testim-content" class="cont">
-                  <div class="active">
-                    <div class="img">
-                      <img src="./assets/images/Rectangle 82.png" alt="" />
-                      <h2>- Jame, Matric student</h2>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco.
-                    </p>
-                  </div>
 
-                  <div>
-                    <div class="img">
-                      <img src="./assets/images/Rectangle 82.png" alt="" />
-                      <h2>Mr. Lorem Ipsum</h2>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco.
-                    </p>
+        <div class="testim-main-wrapper">
+          <button class="btn btn-prev">
+            <img
+              src="./assets/vectors/left-arrow-slider.svg"
+              alt="left-arrow"
+            />
+          </button>
+          <button class="btn btn-next">
+            <img
+              src="./assets/vectors/right-arrow-slider.svg"
+              alt="left-arrow"
+            />
+          </button>
+          <div class="container-testim">
+            <div class="wrapper">
+              <div class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./assets/images/Rectangle 82.png"
+                    class="client-img"
+                    alt=""
+                  />
+                  <span class="client-name">- Jame, matric student</span>
+                </div>
+                <div class="card-body">
+                  <p class="review">
+                    I would recomend tut A, to any one. It helped me improve by
+                    30 percent in the first month...
+                  </p>
+                  <div class="rating">
+                    <img
+                      src="./assets/vectors/start-fill.svg"
+                      class="star"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/vectors/start-fill.svg"
+                      class="star"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/vectors/start-fill.svg"
+                      class="star"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/vectors/start-fill.svg"
+                      class="star"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/vectors/start-fill.svg"
+                      class="star"
+                      alt=""
+                    />
                   </div>
-
-                  <div>
-                    <div class="img">
-                      <img src="./assets/images/Rectangle 82.png" alt="" />
-                      <h2>Lorem Ipsum</h2>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco.
-                    </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./assets/images/Rectangle 82.png"
+                    class="client-img"
+                    alt=""
+                  />
+                  <span class="client-name">client two</span>
+                </div>
+                <div class="card-body">
+                  <p class="review">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ea, nam. Fugiat, ut provident. Nulla quibusdam labore ea est
+                    consequatur sequi fuga iusto laudantium, earum doloremque?
+                  </p>
+                  <div class="rating">
+                    <img
+                      src="./assets/vectors/start-fill.svg"
+                      class="star"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/vectors/start-fill.svg"
+                      class="star"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/vectors/start-fill.svg"
+                      class="star"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/vectors/start-fill.svg"
+                      class="star"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/vectors/start-fill.svg"
+                      class="star"
+                      alt=""
+                    />
                   </div>
-
-                  <div>
-                    <div class="img">
-                      <img src="./assets/images/Rectangle 82.png" alt="" />
-                      <h2>Lorem De Ipsum</h2>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco.
-                    </p>
-                  </div>
-
-                  <div>
-                    <div class="img">
-                      <img src="./assets/images/Rectangle 82.png" alt="" />
-                      <h2>Ms. Lorem R. Ipsum</h2>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco.
-                    </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./assets/images/Rectangle 82.png"
+                    class="client-img"
+                    alt=""
+                  />
+                  <span class="client-name">client three</span>
+                </div>
+                <div class="card-body">
+                  <p class="review">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ea, nam. Fugiat, ut provident. Nulla quibusdam labore ea est
+                    consequatur sequi fuga iusto laudantium, earum doloremque?
+                  </p>
+                  <div class="rating">
+                    <img
+                      src="./assets/vectors/start-fill.svg"
+                      class="star"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/vectors/start-fill.svg"
+                      class="star"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/vectors/start-fill.svg"
+                      class="star"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/vectors/start-fill.svg"
+                      class="star"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/vectors/start-fill.svg"
+                      class="star"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+            <div class="indicators">
+              <button class="active"></button>
+              <button></button>
+              <button></button>
+            </div>
+          </div>
         </div>
       </section>
 
       <div id="how-to">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-6 left">
-              <img
-                src="./assets/vectors/yellow-circle-how-to.svg"
-                class="yellow-circle"
-                alt=""
-              />
-              <h1 class="underline">How to get a tutor</h1>
+        <div class="list-wrap">
+          <img
+            src="./assets/vectors/yellow-circle-how-to.svg"
+            class="yellow-circle"
+            alt=""
+          />
+          <h1 class="underline">How to get a tutor?</h1>
 
-              <ol>
-                <li>Click on <span class="blue">get a tutor</span></li>
-                <li>Answer a few questions</li>
-                <li>Start Learning</li>
-              </ol>
-            </div>
-            <div class="col-6 right">
-              <img
-                src="./assets/vectors/light-green-gradient-circle.svg"
-                alt="circle"
-                class="gradient-circle"
-              />
-              <img
-                src="./assets/vectors/yellow-circles.svg"
-                alt="circles"
-                class="multiple-circles"
-              />
-              <img
-                src="./assets/images/van-tay-media-TLAuf1Z3VG8-unsplash-removebg 1.png"
-                class="girls"
-                alt=""
-              />
-            </div>
-          </div>
+          <ol>
+            <li>Click on <span class="blue">get a tutor</span></li>
+            <li>Answer a few questions</li>
+            <li>Start Learning</li>
+          </ol>
+          <img
+            src="./assets/vectors/light-green-gradient-circle.svg"
+            alt="circle"
+            class="gradient-circle"
+          />
+          <img
+            src="./assets/vectors/yellow-circles.svg"
+            alt="circles"
+            class="multiple-circles"
+          />
+          <img
+            src="./assets/images/van-tay-media-TLAuf1Z3VG8-unsplash-removebg 1.png"
+            class="girls"
+            alt=""
+          />
         </div>
       </div>
 
@@ -333,7 +400,7 @@
 
       <section id="results">
         <h1 class="underline">We deliver results.</h1>
-        <p class="mx-auto mt-4">
+        <p class="mx-auto mt-4 para">
           Be part of the 99 percent students who succeded with tut A. 95% of our
           students obtained distinction in the respective subjects. 50+ students
           are succeeding, Join us now in be part of the postive statistic.
@@ -364,7 +431,7 @@
       </section>
 
       <section id="why-us">
-        <h1 class="underline">Why Choose US?</h1>
+        <h1 class="text-center mb-4 pb-2 underline">Why Choose US?</h1>
 
         <div
           class="
@@ -428,12 +495,12 @@
 
       <section id="who-we-are">
         <h1 class="underline mb-3">WHO WE ARE.</h1>
-        <h3 class="text-center">
+        <h3 class="text-left mx-auto">
           We are group of young passionate about Education. We are pentient,
           driven by the execellent results from our thriving students.
         </h3>
 
-        <div id="slick">
+        <div id="slick" class="mt-5">
           <div class="item">
             <div class="text">
               <h2>Thembinkosi Manhique</h2>
@@ -467,13 +534,16 @@
             <img src="./assets/images/Rectangle 82 (1).png" alt="" srcset="" />
           </div>
         </div>
+
+        <div class="join-btn">Join Our Team</div>
       </section>
 
       <section id="our-values">
-        <h1 class="underline mb-4">OUR VALUES</h1>
+        <h1 class="underline mb-4 pb-3">OUR VALUES</h1>
 
         <div
           class="
+            pt-3
             cards-container
             d-flex
             justify-content-center
@@ -544,7 +614,7 @@
       <section id="contact">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-6 talk-to-us text-center text-lg-left">
+            <div class="col-md-6 talk-to-us text-center text-md-start">
               <h2>Talk to Us</h2>
               <h3>Send Us a Message</h3>
               <img
@@ -579,7 +649,7 @@
               </form>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-md-6">
               <div class="join-community">
                 <h1>Join a community of excelling students</h1>
 
@@ -610,7 +680,7 @@
     </div>
 
     <footer id="footer">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md-4">
             <ul>
@@ -660,7 +730,7 @@
               <li><a href="#">Login</a></li>
             </ul>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 text-left text-md-end">
             <ul>
               <li><h2>Learning & Support</h2></li>
               <li><a href="#">Get a tutor</a></li>
@@ -679,25 +749,33 @@
                 align-items-center
               "
             >
-              <a href=""
+              <a class="light" href=""
                 ><img src="./assets/vectors/facebook.svg" alt="facebook" /></a
               ><a href=""
-                ><img src="./assets/vectors/slack.svg" alt="slack" /></a
-              ><a href=""
+                ><img
+                  class="light"
+                  src="./assets/vectors/slack.svg"
+                  alt="slack" /></a
+              ><a class="light" href=""
                 ><img src="./assets/vectors/email.svg" alt="email"
+              /></a>
+              <a class="dark" href=""
+                ><img
+                  class="dark"
+                  src="./assets/vectors/facebook-dark.svg"
+                  alt="facebook" /></a
+              ><a class="dark" href=""
+                ><img src="./assets/vectors/slack-dark.svg" alt="slack" /></a
+              ><a class="dark" href=""
+                ><img src="./assets/vectors/email-dark.svg" alt="email"
               /></a>
             </div>
           </div>
-          <div class="container-fluid legal text-center text-lg-left">
+          <div class="container-fluid legal text-center text-lg-start">
             <div class="row">
-              <div class="col-md-3">@QUEDEV, tutaA x &copy; 2021</div>
+              <div class="col-md-4 copyright">@QUEDEV, tutaA x &copy; 2021</div>
               <div
-                class="
-                  col-md-9
-                  d-flex
-                  justify-content-center
-                  align-items-center
-                "
+                class="col-md-8 d-flex justify-content-start align-items-center"
               >
                 <a class="mx-2" href="#">Legal Stuff</a
                 ><a class="mx-2" href="#">Privacy Policy</a
@@ -709,7 +787,6 @@
       </div>
     </footer>
 
-    <script src="./assets/js/slider.js"></script>
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.11.0.min.js"
@@ -719,6 +796,7 @@
       src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script src="./assets/js/slick.js"></script>
+    <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>
