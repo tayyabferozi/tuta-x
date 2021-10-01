@@ -71,3 +71,10 @@ $("#nav-toggler").click(function () {
 $("#dark-overlay").click(hideSideBar);
 
 $(".nav-sm li").click(hideSideBar);
+
+$(".nav-item a").click(function () {
+  $(".nav-item").removeClass("active");
+  $(this).parents(".nav-item").addClass("active");
+});
+
+$(".close").click(hideSideBar);
