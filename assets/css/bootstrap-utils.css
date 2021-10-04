@@ -12,12 +12,16 @@
 }
 
 .cards-container .card h3 {
-  max-width: 150px;
+  max-width: 191px;
   margin-bottom: 0.75rem;
+  font-weight: 800;
+  text-align: left;
+  font-size: 1.5rem;
 }
 
 .cards-container .card p {
-  max-width: 170px;
+  max-width: 186px;
+  text-align: left;
 }
 
 @media screen and (max-width: 992px) {

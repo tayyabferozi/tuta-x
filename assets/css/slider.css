@@ -86,9 +86,9 @@
 
 @media screen and (max-width: 460px) {
   .container-testim .client-name {
-    /* bottom: -4rem; */
     padding-left: 0;
     padding-right: 0;
+    width: 114px;
   }
 }
 
@@ -133,7 +133,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(196, 196, 196, 0.75);
+  background-color: rgba(237, 237, 237, 0.75);
   border: 0;
   width: 40px;
   height: 40px;
@@ -176,12 +176,33 @@
 }
 
 @media screen and (max-width: 767px) {
-  .btn-prev {
-    display: none;
-  }
-
+  .btn-prev,
   .btn-next {
-    display: none;
+    width: 46px;
+    height: 46px;
+  }
+  .btn-prev {
+    left: -10px;
+  }
+  .btn-next {
+    right: -10px;
+  }
+  .container-testim .card-thumb {
+    width: 190px;
+    height: 201px;
+  }
+  .container-testim .indicators {
+    bottom: 19px;
+  }
+  .container-testim .client-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-testim .review {
+    font-size: 16px;
   }
 }
 
@@ -191,29 +212,76 @@
   }
 }
 
-@media (max-width: 560px) {
-  .container-testim .indicators {
-    left: 48%;
-    bottom: 90px;
+@media (max-width: 603px) {
+  .container-testim .card-thumb {
+    width: 190px;
+    height: 188px;
   }
 }
 
-@media (max-width: 501px) {
+@media (max-width: 580px) {
   .container-testim .indicators {
-    bottom: 100px;
+    bottom: 10px;
+  }
+  .container-testim .review {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .container-testim .indicators {
+    left: 48%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container-testim .client-img {
+    width: 170px;
+    height: 170px;
+  }
+  .container-testim .card-thumb {
+    width: 190px;
+    height: 158px;
+  }
+}
+
+@media (max-width: 502px) {
+  .container-testim .client-img {
+    width: 130px;
+    height: 130px;
+  }
+  .container-testim .card-thumb {
+    width: 190px;
+    height: 118px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container-testim .review {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
 @media (max-width: 457px) {
   .container-testim .indicators {
-    bottom: 130px;
+    bottom: 5px;
+  }
+  .testim-main-wrapper,
+  .container-testim {
+    padding-bottom: 2px;
+  }
+  .container-testim .review {
+    font-size: 12px;
   }
 }
-
-@media (max-width: 417px) {
-  .container-testim .indicators {
-    bottom: 170px;
-    left: 50%;
+@media (max-width: 425px) {
+  .container-testim .client-img {
+    width: 100px;
+    height: 100px;
+  }
+  .container-testim .card-thumb {
+    height: 85px;
   }
 }
 
