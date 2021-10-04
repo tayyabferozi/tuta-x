@@ -29,6 +29,7 @@ body .top-right-big-circle {
   right: 0;
   opacity: 0.3;
   width: 224px;
+  z-index: 6;
 }
 
 @media screen and (max-width: 767px) {
@@ -113,7 +114,11 @@ h1 {
   top: 0;
   padding: 0 50px;
   background: #fff;
-  z-index: -1;
+  z-index: 5;
+}
+
+#navbar > * {
+  z-index: 3;
 }
 
 #navbar .nav-logo-wrapper {
@@ -708,6 +713,12 @@ h1 {
   top: -50px;
 }
 
+@media screen and (max-width: 390px) {
+  #how-to .list-wrap .girls {
+    top: 150px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   #how-to .list-wrap .girls {
     width: 45%;
@@ -1187,7 +1198,6 @@ h1 {
 
 #who-we-are .join-btn {
   background-color: #da4a54;
-  max-width: 150px;
   padding: 0.75rem 0;
   color: #fff;
   font-weight: 700;
@@ -1197,6 +1207,9 @@ h1 {
   margin-right: auto;
   margin-top: 4rem;
   font-size: 18px;
+  padding: 0.75rem 1.5rem;
+  display: block;
+  cursor: pointer;
 }
 
 #our-values {
@@ -1619,12 +1632,5 @@ h1 {
   }
   .container-testim .indicators {
     bottom: 5px;
-  }
-}
-/*# sourceMappingURL=styles.css.map */
-
-@media screen and (max-width: 390px) {
-  #how-to .list-wrap .girls {
-    top: 150px;
   }
 }
