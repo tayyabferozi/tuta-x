@@ -1123,6 +1123,7 @@ h1 {
 
   .join-btn {
     background-color: #da4a54;
+    max-width: 150px;
     padding: 0.75rem 0;
     color: #fff;
     font-weight: 700;
@@ -1132,9 +1133,6 @@ h1 {
     margin-right: auto;
     margin-top: 4rem;
     font-size: 18px;
-    padding: 0.75rem 1.5rem;
-    display: block;
-    cursor: pointer;
   }
 }
 
