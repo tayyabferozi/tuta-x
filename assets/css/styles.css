@@ -44,6 +44,7 @@ body .go-to-top {
   width: 4rem;
   cursor: pointer;
   z-index: 4;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 body .go-to-top.bg {
@@ -112,7 +113,7 @@ h1 {
   top: 0;
   padding: 0 50px;
   background: #fff;
-  z-index: 5;
+  z-index: -1;
 }
 
 #navbar .nav-logo-wrapper {
@@ -166,7 +167,7 @@ h1 {
   margin: 2rem -12px 0;
   padding: 0.5rem 1.5rem;
   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   background-color: #fff;
   z-index: 2;
 }
@@ -257,14 +258,14 @@ h1 {
 #landing .dark-card .cta-btn {
   position: relative;
   top: 1rem;
-  left: 50%;
+  left: 45%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   background-color: #ffd43a;
   color: #000;
   font-weight: 500;
   font-size: 25px;
-  max-width: 70%;
+  width: 90%;
   border-radius: 10px;
 }
 
@@ -640,7 +641,7 @@ h1 {
   left: -48px;
   top: 24%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   background-color: #000;
   width: 14px;
   height: 14px;
@@ -723,29 +724,9 @@ h1 {
 @media screen and (max-width: 540px) {
   #how-to .list-wrap .girls {
     top: 120px;
-    left: 42%;
-  }
-}
-
-@media screen and (max-width: 490px) {
-  #how-to .list-wrap .girls {
-    left: 47%;
-    top: 150px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  #how-to .list-wrap .girls {
-    left: 50%;
-    top: 140px;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  #how-to .list-wrap .girls {
-    width: 35%;
-    left: 60%;
-    top: 190px;
+    left: unset;
+    right: 0;
+    width: 230px;
   }
 }
 
@@ -821,7 +802,7 @@ h1 {
 
 @media screen and (max-width: 780px) {
   #features {
-    margin-bottom: 8rem;
+    margin: 10rem 0 3rem;
   }
 }
 
@@ -833,7 +814,7 @@ h1 {
 
 @media screen and (max-width: 540px) {
   #features {
-    margin-top: 13rem;
+    margin-top: 210px;
   }
 }
 
@@ -847,7 +828,7 @@ h1 {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 0;
 }
 
@@ -860,9 +841,9 @@ h1 {
 #subjects .lists-container .list {
   position: relative;
   padding: 3rem 4rem;
-  border-radius: 5px;
+  border-radius: 20px;
   -webkit-box-shadow: 0 1px 4px #00000050;
-          box-shadow: 0 1px 4px #00000050;
+  box-shadow: 0 1px 4px #00000050;
   z-index: 1;
   background-color: #fff;
   text-align: center;
@@ -887,13 +868,7 @@ h1 {
 @media screen and (max-width: 780px) {
   #subjects .lists-container .list {
     -webkit-box-shadow: 3px 3px 4px #00000050;
-            box-shadow: 3px 3px 4px #00000050;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #subjects {
-    margin-top: 6rem;
+    box-shadow: 3px 3px 4px #00000050;
   }
 }
 
@@ -913,6 +888,10 @@ h1 {
 @media screen and (max-width: 767px) {
   #results .para {
     display: none;
+  }
+  #features .cards-container .home,
+  #features .cards-container p {
+    text-align: center;
   }
 }
 
@@ -1050,11 +1029,11 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 1.5rem;
 }
 
@@ -1179,7 +1158,7 @@ h1 {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   background-color: #e5e5e5;
   border: 0;
   border-radius: 50%;
@@ -1234,12 +1213,13 @@ h1 {
 
 #our-values .cards-container .card p {
   max-width: 250px;
+  font-size: 1.1rem;
 }
 
 #our-values .get-tutor {
   position: relative;
   -webkit-box-shadow: 2px 2px 18px #00000025;
-          box-shadow: 2px 2px 18px #00000025;
+  box-shadow: 2px 2px 18px #00000025;
   padding: 4rem;
   max-width: 680px;
   margin-top: 4rem;
@@ -1259,7 +1239,7 @@ h1 {
   text-align: center;
   border-radius: 5px;
   -webkit-box-shadow: 0px 4px 4px #00000025;
-          box-shadow: 0px 4px 4px #00000025;
+  box-shadow: 0px 4px 4px #00000025;
 }
 
 #our-values .get-tutor h1 {
@@ -1267,7 +1247,7 @@ h1 {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 #our-values .get-tutor .graduated {
@@ -1293,8 +1273,11 @@ h1 {
     right: unset;
     left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     bottom: -35px;
+  }
+  #our-values .get-tutor .right-arrow {
+    left: 20px;
   }
 }
 
@@ -1312,7 +1295,7 @@ h1 {
   #our-values .get-tutor {
     border: 0;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
 }
 
@@ -1331,6 +1314,11 @@ h1 {
 #contact {
   max-width: 1000px;
   margin: 10rem auto 2rem;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 #contact .row > * {
@@ -1380,6 +1368,7 @@ h1 {
 #contact .talk-to-us .form-control textarea {
   padding: 0.5rem;
   display: block;
+  margin: 5px 0;
   width: 325px;
   border: 2px solid #000;
   border-radius: 5px;
@@ -1409,7 +1398,7 @@ h1 {
   right: 20px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 @media screen and (max-width: 780px) {
@@ -1431,7 +1420,13 @@ h1 {
 
 #contact .join-community {
   padding: 2rem;
-  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #183651), to(#7a899d));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    color-stop(50%, #183651),
+    to(#7a899d)
+  );
   background-image: linear-gradient(to bottom right, #183651 50%, #7a899d 100%);
   border-radius: 5px;
 }
@@ -1460,6 +1455,13 @@ h1 {
     margin-left: -12px;
     margin-right: -12px;
     border-radius: 0;
+  }
+  #contact .join-community h1 {
+    font-size: 30px;
+  }
+  #contact .container-fluid {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -1551,8 +1553,8 @@ h1 {
     margin-left: unset;
     margin-right: auto;
     -webkit-box-pack: start !important;
-        -ms-flex-pack: start !important;
-            justify-content: flex-start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
   }
   #footer .social img {
     margin-right: 1rem;
@@ -1591,4 +1593,38 @@ h1 {
     margin-top: 0;
   }
 }
+
+@media screen and (max-width: 767px) {
+  #landing .dark-card .cta-btn {
+    width: 100%;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #landing .dark-card .main {
+    font-size: 2.2rem;
+  }
+  .container-testim .card {
+    padding: 20px 10px;
+  }
+  #contact .join-community h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 423px) {
+  .container-testim .rating {
+    bottom: 19px;
+  }
+  .container-testim .indicators {
+    bottom: 5px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
+
+@media screen and (max-width: 390px) {
+  #how-to .list-wrap .girls {
+    top: 150px;
+  }
+}
