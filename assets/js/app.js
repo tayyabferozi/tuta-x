@@ -57,6 +57,8 @@ $(function () {
     ],
   });
 
+  new Splide(".splide").mount();
+
   function hideSideBar() {
     $(".nav-sm").removeClass("active");
     setTimeout(function () {
