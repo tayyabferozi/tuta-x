@@ -29,7 +29,6 @@ body .top-right-big-circle {
   right: 0;
   opacity: 0.3;
   width: 224px;
-  z-index: 6;
 }
 
 @media screen and (max-width: 767px) {
@@ -115,6 +114,13 @@ h1 {
   padding: 0 50px;
   background: #fff;
   z-index: 5;
+}
+
+body .top-right-big-circle {
+  z-index: 6;
+}
+#navbar > * {
+  z-index: 3;
 }
 
 #navbar > * {
@@ -713,12 +719,6 @@ h1 {
   top: -50px;
 }
 
-@media screen and (max-width: 390px) {
-  #how-to .list-wrap .girls {
-    top: 150px;
-  }
-}
-
 @media screen and (max-width: 700px) {
   #how-to .list-wrap .girls {
     width: 45%;
@@ -1020,6 +1020,7 @@ h1 {
 }
 
 #who-we-are h3 {
+  text-align: center;
   color: rgba(2, 23, 41, 0.5);
   max-width: 941px;
 }
@@ -1465,16 +1466,16 @@ h1 {
 
 @media screen and (max-width: 767px) {
   #contact .join-community {
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -12px;
+    margin-right: -12px;
     border-radius: 0;
   }
   #contact .join-community h1 {
     font-size: 30px;
   }
   #contact .container-fluid {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -1634,57 +1635,10 @@ h1 {
     bottom: 5px;
   }
 }
+/*# sourceMappingURL=styles.css.map */
 
-.splide {
-  max-width: 750px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.splide img {
-  width: 100%;
-}
-
-.splide .text {
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.5rem;
-  height: 100%;
-  font-size: 25px;
-  font-weight: 500;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  color: #323232;
-}
-
-.splide .reviews img {
-  width: 1.25rem;
-}
-
-.splide .name {
-  font-weight: 600;
-  font-size: 13px;
-  text-align: center;
-  padding: 0.5rem 0;
-}
-
-.splide__pagination {
-  padding-left: 190px;
-  justify-content: flex-start;
-}
-
-.splide__pagination li {
-  margin-right: 0.25rem;
-}
-
-.splide .splide__pagination__page {
-  width: 12px;
-  height: 12px;
-  background-color: rgba(196, 196, 196, 0.75);
-}
-
-.splide .splide__pagination__page.is-active {
-  background-color: #000;
+@media screen and (max-width: 390px) {
+  #how-to .list-wrap .girls {
+    top: 150px;
+  }
 }
