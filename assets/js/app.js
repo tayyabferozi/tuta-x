@@ -92,4 +92,5 @@ $(function () {
       $("#go-to-top").show();
     }
   });
+  AOS.init();
 });
