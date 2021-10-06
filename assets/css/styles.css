@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +16,10 @@
 body {
   overflow-x: hidden;
   position: relative;
+}
+
+section {
+  /* overflow-x: hidden;  */
 }
 
 @media screen and (min-width: 781px) {
@@ -150,7 +155,15 @@ body .top-right-big-circle {
   color: rgba(0, 0, 0, 0.25);
 }
 
+#navbar .nav .nav-item .phone * {
+  color: #020112;
+}
+
 #navbar .nav .nav-item.active * {
+  color: #020112;
+}
+
+#navbar .nav .nav-item .active {
   color: #020112;
 }
 
@@ -213,6 +226,13 @@ body .top-right-big-circle {
   transition: 0.5s ease;
 }
 
+.nav-sm .logo {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  width: 5rem;
+}
+
 .nav-sm .close {
   position: absolute;
   right: 1rem;
@@ -226,12 +246,19 @@ body .top-right-big-circle {
 
 .nav-sm .nav {
   padding: 1.5rem;
+  padding-top: 3rem;
 }
 
 .nav-sm .nav .nav-item {
   padding: 0.5rem;
   margin: 1rem;
   border-bottom: 1px solid #ccc;
+}
+
+.nav-sm .nav .nav-item.active,
+.nav-sm .nav .nav-item.active *,
+.nav-sm .nav .nav-item .active {
+  font-weight: bold;
 }
 
 #landing {
@@ -269,14 +296,14 @@ body .top-right-big-circle {
 #landing .dark-card .cta-btn {
   position: relative;
   top: 1rem;
-  left: 45%;
+  left: 26%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   background-color: #ffd43a;
   color: #000;
   font-weight: 500;
   font-size: 25px;
-  width: 90%;
+  width: 50%;
   border-radius: 10px;
 }
 
@@ -546,57 +573,12 @@ body .top-right-big-circle {
 #testimonials h2.title {
   position: relative;
   max-width: 1020px;
-  padding-left: 23%;
+  padding-left: 2rem;
   z-index: 1;
 }
 
-@media screen and (max-width: 1320px) {
-  #testimonials h2.title {
-    padding-left: 20%;
-  }
-}
-
-@media screen and (max-width: 1230px) {
-  #testimonials h2.title {
-    padding-left: 18%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  #testimonials h2.title {
-    padding-left: 16%;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  #testimonials h2.title {
-    padding-left: 14%;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  #testimonials h2.title {
-    padding-left: 12%;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #testimonials h2.title {
-    text-align: center;
-    padding-left: 2rem;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  #testimonials h2.title {
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 510px) {
-  #testimonials h2.title {
-    margin-top: -5rem;
-  }
+#testimonials h2.title span {
+  color: #021729;
 }
 
 @media screen and (max-width: 576px) {
@@ -624,6 +606,7 @@ body .top-right-big-circle {
   padding-bottom: 0.5rem;
   position: relative;
   z-index: 1;
+  margin-left: 2.5rem;
 }
 
 #how-to .list-wrap ol {
@@ -913,11 +896,10 @@ body .top-right-big-circle {
 
 #results .cards-container .card {
   margin: 1rem 2rem;
-  padding: 1rem;
+  padding: 2rem 3rem;
   background-color: #000;
   border-radius: 10px;
-  text-align: center;
-  width: 180px;
+  width: 200px;
 }
 
 #results .cards-container .card.blue {
@@ -933,7 +915,7 @@ body .top-right-big-circle {
 }
 
 #results .cards-container .card h2 {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 780px) {
@@ -1036,6 +1018,14 @@ body .top-right-big-circle {
   position: relative;
 }
 
+#who-we-are #slick .slick-slide:not(.slick-center) .image-wrap img {
+  border-radius: 136px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
 #who-we-are #slick .slick-slide .item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1046,7 +1036,7 @@ body .top-right-big-circle {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
 }
 
 #who-we-are #slick .slick-slide .item .text {
@@ -1062,6 +1052,21 @@ body .top-right-big-circle {
 
 #who-we-are #slick .slick-slide .item .text * {
   color: #fff;
+}
+
+#who-we-are #slick .slick-slide .item .text h4 {
+  font-weight: 400;
+}
+
+#who-we-are #slick .slick-slide .item .text .rating {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#who-we-are #slick .slick-slide .item .text .rating img {
+  width: 1rem;
 }
 
 @media screen and (max-width: 970px) {
@@ -1405,6 +1410,7 @@ body .top-right-big-circle {
   text-align: center;
   width: 325px;
   border-radius: 7px;
+  height: 42px;
 }
 
 #contact .talk-to-us .btn img {

@@ -47,10 +47,17 @@
           <img src="./assets/vectors/logo.svg" alt="logo" />
         </div>
         <ul class="nav d-flex justify-content-center align-items-center">
-          <li class="nav-item active"><a href="#">Home</a></li>
+          <li class="nav-item"><a class="active" href="#landing">Home</a></li>
           <li class="nav-item"><a href="#who-we-are">About Us</a></li>
           <li class="nav-item"><a href="#contact">Contact Us</a></li>
-          <li class="nav-item"><a class="btn" href="#">login</a></li>
+          <li class="nav-item">
+            <a
+              class="phone d-flex justify-content-center align-items-center"
+              href=""
+              ><span class="me-3">0672182845</span>
+              <img src="./assets/vectors/whatsapp.svg" alt="whatsapp"
+            /></a>
+          </li>
         </ul>
       </nav>
 
@@ -78,8 +85,9 @@
 
       <div class="nav-sm">
         <div class="close">&times;</div>
+        <img class="logo" src="./assets/vectors/logo.svg" alt="logo" />
         <ul class="nav">
-          <li class="nav-item active"><a href="#">Home</a></li>
+          <li class="nav-item active"><a href="#landing">Home</a></li>
           <li class="nav-item"><a href="#who-we-are">About Us</a></li>
           <li class="nav-item"><a href="#contact">Contact Us</a></li>
           <li class="nav-item"><a class="btn" href="#">login</a></li>
@@ -91,37 +99,17 @@
       <!-- -------------------------------- Landing section START -------------------------------- -->
 
       <section id="landing">
-        <img
-          src="./assets/vectors/teacher.svg"
-          alt="teacher"
-          class="teacher"
-          data-aos="fade-right"
-          data-aos-duration="1500"
-          data-aos-delay="300"
-        />
+        <img src="./assets/vectors/teacher.svg" alt="teacher" class="teacher" />
         <img
           src="./assets/vectors/teacher-sm.svg"
           alt="teacher"
           class="teacher-sm"
-          data-aos="fade-right"
-          data-aos-duration="1500"
-          data-aos-delay="2000"
         />
-        <img
-          src="./assets/vectors/grade.svg"
-          alt="grade"
-          class="grade"
-          data-aos="fade-left"
-          data-aos-delay="500"
-          data-aos-duration="1500"
-        />
+        <img src="./assets/vectors/grade.svg" alt="grade" class="grade" />
         <img
           src="./assets/vectors/chemistry.svg"
           alt="chemistry"
           class="chemistry"
-          data-aos="fade-left"
-          data-aos-delay="500"
-          data-aos-duration="1250"
         />
         <img
           src="./assets/vectors/chemistry-sm.svg"
@@ -133,14 +121,8 @@
           src="./assets/vectors/think.svg"
           class="d-block mx-auto mb-1 mt-5 mt-md-0"
           alt="think"
-          data-aos="fade-down"
-          data-aos-duration="800"
         />
-        <div
-          class="dark-card mx-auto"
-          data-aos="fade-up"
-          data-aos-duration="5000"
-        >
+        <div class="dark-card mx-auto">
           <div class="main">
             WE <span class="green">help</span> learners archive academic
             excellence.
@@ -151,12 +133,12 @@
           </div>
           <button class="cta-btn">Get a tutor</button>
         </div>
-        <div
+        <!-- <div
           class="mt-5 whatsapp d-flex justify-content-center align-items-center"
         >
           <img src="./assets/vectors/whatsapp.svg" alt="" srcset="" />
           <h2 class="ms-3">0672182845</h2>
-        </div>
+        </div> -->
       </section>
 
       <!-- -------------------------------- Landing section END -------------------------------- -->
@@ -164,9 +146,6 @@
       <!-- -------------------------------- Students / testimonials section START -------------------------------- -->
 
       <section id="testimonials">
-        <h2 class="title">
-          Our <span class="d-md-none d-inline-block">Happy</span> students
-        </h2>
         <img
           src="./assets/vectors/gradient-circle-testimonials.svg"
           class="big-circle"
@@ -185,6 +164,10 @@
         <img src="./assets/vectors/smilie.svg" alt="smilie" class="smilie" />
 
         <div class="testim-main-wrapper">
+          <h2 class="title">
+            Our <span class="d-md-none d-inline-block">Happy</span>
+            <span class="d-md-inline-block d-block">students</span>
+          </h2>
           <button class="btn btn-prev">
             <img
               src="./assets/vectors/left-arrow-slider.svg"
@@ -197,6 +180,7 @@
               alt="left-arrow"
             />
           </button>
+          <!-- <div class="container-testim"> -->
           <div
             class="container-testim"
             data-aos="flip-right"
@@ -355,7 +339,10 @@
             class="yellow-circle"
             alt=""
           />
-          <h1 class="underline">How to get a tutor?</h1>
+          <h1 class="underline">
+            How to <br />
+            get a tutor?
+          </h1>
 
           <ol>
             <li>Click on <span class="blue">get a tutor</span></li>
@@ -372,6 +359,10 @@
             alt="circles"
             class="multiple-circles"
           />
+          <!-- <img
+            src="./assets/images/van-tay-media-TLAuf1Z3VG8-unsplash-removebg 1.png"
+            class="girls"
+          /> -->
           <img
             src="./assets/images/van-tay-media-TLAuf1Z3VG8-unsplash-removebg 1.png"
             class="girls"
@@ -401,6 +392,7 @@
             flex-column flex-md-row
           "
         >
+          <!-- <div class="card home"> -->
           <div
             class="card home"
             data-aos="fade-up"
@@ -414,6 +406,7 @@
               pace.
             </p>
           </div>
+          <!-- <div class="card online"> -->
           <div
             class="card online"
             data-aos="fade-up"
@@ -424,6 +417,7 @@
             <h2>Online tutoring</h2>
             <p>Distance is not an issue, we are the best in your area.</p>
           </div>
+          <!-- <div class="card group"> -->
           <div
             class="card group"
             data-aos="fade-up"
@@ -468,7 +462,8 @@
             flex-column flex-md-row
           "
         >
-          <div class="list" data-aos="fade-up-right" data-aos-duration="700">
+          <div class="list">
+            <!-- <div class="list" data-aos="fade-up-right" data-aos-duration="700"> -->
             <ul>
               <h2>High school</h2>
               <li>Mathematics</li>
@@ -479,11 +474,12 @@
             </ul>
             <button class="btn">GET A TUTOR</button>
           </div>
-          <div
+          <div class="list mt-3 mt-md-0">
+            <!-- <div
             class="list mt-3 mt-md-0"
             data-aos="fade-up-left"
             data-aos-duration="700"
-          >
+          > -->
             <h2>University</h2>
             <ul>
               <li>Calculus</li>
@@ -502,6 +498,8 @@
       <!-- -------------------------------- Results START -------------------------------- -->
 
       <section id="results">
+        <!-- <h1 class="underline">We deliver results.</h1>
+        <p class="mx-auto mt-4 para"> -->
         <h1 class="underline" data-aos="fade-up">We deliver results.</h1>
         <p class="mx-auto mt-4 para" data-aos="fade-up" data-aos-duration="800">
           Be part of the 99 percent students who succeded with tut A. 95% of our
@@ -518,6 +516,7 @@
             flex-column flex-md-row
           "
         >
+          <!-- <div class="card"> -->
           <div
             class="card"
             data-aos="flip-right"
@@ -527,6 +526,7 @@
             <h2>100%</h2>
             <p>success</p>
           </div>
+          <!-- <div class="card blue"> -->
           <div
             class="card blue"
             data-aos="flip-right"
@@ -536,6 +536,7 @@
             <h2>35+</h2>
             <p>distinctions</p>
           </div>
+          <!-- <div class="card dark-blue"> -->
           <div
             class="card dark-blue"
             data-aos="flip-right"
@@ -564,12 +565,21 @@
             flex-column flex-md-row
           "
         >
-          <div class="card" data-aos="fade-right" data-aos-duration="700">
+          <!-- <div class="card"> -->
+          <div class="card" data-aos="flip-down" data-aos-duration="700">
+            <!-- <div class="card" data-aos="fade-right" data-aos-duration="700"> -->
             <img src="./assets/vectors/time.svg" alt="time" />
             <h3>24/7 SUPPORT</h3>
             <p>Ask a question anytime and get an answer</p>
           </div>
-          <div class="card" data-aos="fade-up" data-aos-duration="700">
+          <!-- <div class="card"> -->
+          <div
+            class="card"
+            data-aos="flip-down"
+            data-aos-delay="200"
+            data-aos-duration="700"
+          >
+            <!-- <div class="card" data-aos="fade-up" data-aos-duration="700"> -->
             <img src="./assets/vectors/books-stack.svg" alt="books-stack" />
             <h3>Subjects Experts.</h3>
             <p>
@@ -577,7 +587,14 @@
               which produces results.
             </p>
           </div>
-          <div class="card" data-aos="fade-left" data-aos-duration="700">
+          <!-- <div class="card"> -->
+          <div
+            class="card"
+            data-aos="flip-down"
+            data-aos-delay="400"
+            data-aos-duration="700"
+          >
+            <!-- <div class="card" data-aos="fade-left" data-aos-duration="700"> -->
             <img src="./assets/vectors/grade-bg.svg" alt="grade" />
             <h3>Archive the best grades.</h3>
             <p>You work with the tutors directly...</p>
@@ -620,9 +637,11 @@
       <!-- -------------------------------- Who we are START -------------------------------- -->
 
       <section id="who-we-are">
+        <!-- <h1 class="underline mb-3"> -->
         <h1 class="underline mb-3" data-aos="fade-up" data-aos-duration="400">
           WHO WE ARE.
         </h1>
+        <!-- <h3 class="text-left mx-auto"> -->
         <h3
           class="text-left mx-auto"
           data-aos="fade-up"
@@ -638,32 +657,84 @@
               <h2>Thembinkosi Manhique</h2>
               <h4>Beng Electrical</h4>
               <h4>Lead Instructor, Founder & CEO</h4>
+              <div class="rating">
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+              </div>
             </div>
-            <img src="./assets/images/Rectangle 82 (1).png" alt="" srcset="" />
+            <div class="image-wrap">
+              <img
+                src="./assets/images/Rectangle 82 (1).png"
+                alt=""
+                srcset=""
+              />
+            </div>
           </div>
           <div class="item">
             <div class="text">
               <h2>Thembinkosi Manhique</h2>
               <h4>Beng Electrical</h4>
               <h4>Lead Instructor, Founder & CEO</h4>
+              <div class="rating">
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+              </div>
             </div>
-            <img src="./assets/images/Rectangle 82 (1).png" alt="" srcset="" />
+            <div class="image-wrap">
+              <img
+                src="./assets/images/Rectangle 82 (1).png"
+                alt=""
+                srcset=""
+              />
+            </div>
           </div>
           <div class="item">
             <div class="text">
               <h2>Thembinkosi Manhique</h2>
               <h4>Beng Electrical</h4>
               <h4>Lead Instructor, Founder & CEO</h4>
+              <div class="rating">
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+              </div>
             </div>
-            <img src="./assets/images/Rectangle 82 (1).png" alt="" srcset="" />
+            <div class="image-wrap">
+              <img
+                src="./assets/images/Rectangle 82 (1).png"
+                alt=""
+                srcset=""
+              />
+            </div>
           </div>
           <div class="item">
             <div class="text">
               <h2>Thembinkosi Manhique</h2>
               <h4>Beng Electrical</h4>
               <h4>Lead Instructor, Founder & CEO</h4>
+              <div class="rating">
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+                <img src="./assets/vectors/start-fill.svg" alt="start-fill" />
+              </div>
             </div>
-            <img src="./assets/images/Rectangle 82 (1).png" alt="" srcset="" />
+            <div class="image-wrap">
+              <img
+                src="./assets/images/Rectangle 82 (1).png"
+                alt=""
+                srcset=""
+              />
+            </div>
           </div>
         </div>
 
@@ -675,6 +746,7 @@
       <!-- -------------------------------- Our values START -------------------------------- -->
 
       <section id="our-values">
+        <!-- <h1 class="underline mb-4 pb-3">OUR VALUES</h1> -->
         <h1 class="underline mb-4 pb-3" data-aos="fade-up">OUR VALUES</h1>
 
         <div
@@ -686,6 +758,7 @@
             align-items-center
             flex-column flex-md-row
           "
+          data-aos="zoom-in"
         >
           <div class="card">
             <img
@@ -725,6 +798,7 @@
           </div>
         </div>
 
+        <!-- <div class="get-tutor"> -->
         <div class="get-tutor" data-aos="flip-down">
           <h1>Ready to ACE all your classes and exams?</h1>
 
@@ -752,9 +826,10 @@
 
       <!-- -------------------------------- Contact us START -------------------------------- -->
 
-      <section id="contact">
+      <section id="contact" style="overflow: hidden">
         <div class="container-fluid">
           <div class="row">
+            <!-- <div class="col-md-6 talk-to-us text-center text-md-start"> -->
             <div
               class="col-md-6 talk-to-us text-center text-md-start"
               data-aos="fade-up-right"
@@ -794,6 +869,7 @@
               </form>
             </div>
 
+            <!-- <div class="col-md-6"> -->
             <div
               class="col-md-6"
               data-aos="fade-up-left"
@@ -928,11 +1004,17 @@
             <div class="row">
               <div class="col-md-4 copyright">@QUEDEV, tutaA x &copy; 2021</div>
               <div
-                class="col-md-8 d-flex justify-content-start align-items-center"
+                class="
+                  col-md-8
+                  d-flex
+                  justify-content-start
+                  align-items-center
+                  ps-0
+                "
               >
-                <a class="mx-2" href="#">Legal Stuff</a
-                ><a class="mx-2" href="#">Privacy Policy</a
-                ><a class="mx-2" href="#">Terms</a>
+                <a class="me-3" href="#">Legal Stuff</a
+                ><a class="mx-3" href="#">Privacy Policy</a
+                ><a class="mx-3" href="#">Terms</a>
               </div>
             </div>
           </div>
@@ -953,6 +1035,7 @@
     <script src="./assets/js/slick.js"></script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/waypoint.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>

@@ -93,4 +93,46 @@ $(function () {
     }
   });
   AOS.init();
+
+  // Go to home btn
+
+  document.addEventListener("scroll", function () {
+    let scrolledVal = document.querySelector("html").scrollTop;
+    $(".go-to-top.bg").hide();
+    $(".go-to-top.sm").hide();
+
+    if (screen.width > 767) {
+      if (scrolledVal > 30) {
+        $(".go-to-top.bg").show();
+      } else {
+        $(".go-to-top.bg").hide();
+      }
+    } else {
+      if (scrolledVal > 15) {
+        $(".go-to-top.sm").show();
+      } else {
+        $(".go-to-top.sm").hide();
+      }
+    }
+  });
+});
+
+function setNavActive(id) {
+  console.log(id);
+  $(".nav-item").removeClass("active");
+  $(".nav-item a").removeClass("active");
+  $("[href=" + id + "]").addClass("active");
+}
+
+$(".nav-item a").each(function () {
+  const id = this.getAttribute("href");
+  if (id.startsWith("#") && id.length > 1) {
+    console.log(id);
+    new Waypoint({
+      element: document.getElementById(id.substring(1, id.length)),
+      handler: function () {
+        setNavActive(id);
+      },
+    });
+  }
 });
