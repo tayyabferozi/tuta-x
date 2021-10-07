@@ -1336,6 +1336,7 @@ body .top-right-big-circle {
 #contact {
   max-width: 1000px;
   margin: 10rem auto 2rem;
+  overflow: hidden;
 }
 
 #contact h2 {
