@@ -95,20 +95,20 @@ $(function () {
   AOS.init();
 
   // Go to home btn
+  $(".go-to-top.bg").hide();
+  $(".go-to-top.sm").hide();
 
   document.addEventListener("scroll", function () {
     let scrolledVal = document.querySelector("html").scrollTop;
-    $(".go-to-top.bg").hide();
-    $(".go-to-top.sm").hide();
 
     if (screen.width > 767) {
-      if (scrolledVal > 30) {
+      if (scrolledVal > 560) {
         $(".go-to-top.bg").show();
       } else {
         $(".go-to-top.bg").hide();
       }
     } else {
-      if (scrolledVal > 15) {
+      if (scrolledVal > 255) {
         $(".go-to-top.sm").show();
       } else {
         $(".go-to-top.sm").hide();
@@ -118,7 +118,6 @@ $(function () {
 });
 
 function setNavActive(id) {
-  console.log(id);
   $(".nav-item").removeClass("active");
   $(".nav-item a").removeClass("active");
   $("[href=" + id + "]").addClass("active");
